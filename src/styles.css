@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(to bottom, #5935A1, #300057);
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

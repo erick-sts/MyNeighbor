@@ -1,0 +1,19 @@
+#links a
+{
+  text-decoration: none;
+  color: blueviolet;
+}
+
+#botao a:hover{
+  background-color: #460496;
+}
+
+#botao button
+{
+  background-color: #6707dc;
+  border: none;
+}
+
+#botao button:hover{
+  background-color: #460496;
+}
