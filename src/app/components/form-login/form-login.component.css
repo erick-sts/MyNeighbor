@@ -17,3 +17,14 @@
 #botao button:hover{
   background-color: #460496;
 }
+
+#imgCidade
+{
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1220px) {
+  #imgCidade img{
+    display: none;
+  }
+}

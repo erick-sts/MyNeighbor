@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-cadastro.component.css']
 })
 export class FormCadastroComponent {
-
 }

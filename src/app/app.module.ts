@@ -8,6 +8,7 @@ import { FormLoginComponent } from './components/form-login/form-login.component
 import { FormCadastroComponent } from './components/form-cadastro/form-cadastro.component';
 import { FormCadastro2Component } from './components/form-cadastro2/form-cadastro2.component';
 import { FormCadastro3Component } from './components/form-cadastro3/form-cadastro3.component';
+import { FormEsqueciMinhaSenhaComponent } from './components/form-esqueci-minha-senha/form-esqueci-minha-senha.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormCadastro3Component } from './components/form-cadastro3/form-cadastr
     FormLoginComponent,
     FormCadastroComponent,
     FormCadastro2Component,
-    FormCadastro3Component
+    FormCadastro3Component,
+    FormEsqueciMinhaSenhaComponent
   ],
   imports: [
     BrowserModule,

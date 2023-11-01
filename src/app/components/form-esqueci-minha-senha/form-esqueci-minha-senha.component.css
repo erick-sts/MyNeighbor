@@ -1,0 +1,9 @@
+#botao button
+{
+  background-color: #6707dc;
+  border: none;
+}
+
+#botao button:hover{
+  background-color: #460496;
+}
