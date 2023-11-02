@@ -9,22 +9,24 @@
           <img src="../../../assets/MyNeighborLogo.png" style="width: 80px;" alt="" />
         </div>
         <h5 class="text-center mb-3">Bem vindo!</h5>
-        <form>
+        <form [formGroup]="loginFormGroup">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email:</label>
+            <label for="email" class="form-label">Email:</label>
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail1"
+              id="email"
               aria-describedby="emailHelp"
+              formControlName="email"
             />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <label for="senha" class="form-label">Senha</label>
             <input
               type="password"
               class="form-control"
-              id="exampleInputPassword1"
+              id="senha"
+              formControlName="senha"
             />
           </div>
           <div class="text-center" id="links">
@@ -33,7 +35,7 @@
           </div>
 
           <div class="text-center mt-3" id="botao">
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button (click)="login()" type="submit" class="btn btn-primary">Entrar</button>
           </div>
         </form>
       </div>

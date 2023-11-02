@@ -9,6 +9,8 @@ import { FormCadastroComponent } from './components/form-cadastro/form-cadastro.
 import { FormCadastro2Component } from './components/form-cadastro2/form-cadastro2.component';
 import { FormCadastro3Component } from './components/form-cadastro3/form-cadastro3.component';
 import { FormEsqueciMinhaSenhaComponent } from './components/form-esqueci-minha-senha/form-esqueci-minha-senha.component';
+import { ReactiveFormsModule } from '@angular/forms'
+
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { FormEsqueciMinhaSenhaComponent } from './components/form-esqueci-minha-
     FormCadastroComponent,
     FormCadastro2Component,
     FormCadastro3Component,
-    FormEsqueciMinhaSenhaComponent
+    FormEsqueciMinhaSenhaComponent,
+    [FormLoginComponent],
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
