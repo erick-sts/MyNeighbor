@@ -5,6 +5,7 @@ import { FormCadastroComponent } from './components/form-cadastro/form-cadastro.
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { FormCadastro3Component } from './components/form-cadastro3/form-cadastro3.component';
 import { FormEsqueciMinhaSenhaComponent } from './components/form-esqueci-minha-senha/form-esqueci-minha-senha.component';
+import { TelaMapaComponent } from './components/tela-mapa/tela-mapa.component';
 
 const routes: Routes = [
   {path: '', component: FormLoginComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'cadastro/parte2', component: FormCadastro2Component},
   { path: 'cadastro/parte3', component: FormCadastro3Component},
   {path: 'esqueci-minha-senha', component: FormEsqueciMinhaSenhaComponent},
+  {path: `mapa`, component: TelaMapaComponent},
 ];
 
 @NgModule({

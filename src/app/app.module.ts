@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
@@ -9,7 +10,8 @@ import { FormCadastroComponent } from './components/form-cadastro/form-cadastro.
 import { FormCadastro2Component } from './components/form-cadastro2/form-cadastro2.component';
 import { FormCadastro3Component } from './components/form-cadastro3/form-cadastro3.component';
 import { FormEsqueciMinhaSenhaComponent } from './components/form-esqueci-minha-senha/form-esqueci-minha-senha.component';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { TelaMapaComponent } from './components/tela-mapa/tela-mapa.component';
 
 
 @NgModule({
@@ -21,7 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     FormCadastro2Component,
     FormCadastro3Component,
     FormEsqueciMinhaSenhaComponent,
-    [FormLoginComponent],
+    TelaMapaComponent,
   ],
   imports: [
     BrowserModule,
