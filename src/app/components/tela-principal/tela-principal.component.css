@@ -1,0 +1,51 @@
+#navbar {
+  position: fixed;
+  top: 20px;
+}
+
+#navbar a {
+  margin-right: 200px;
+  color: white;
+}
+
+#botao-pesquisa {
+  background-color: #ffffff;
+}
+
+#botao-pesquisa:hover {
+  background-color: #7f7f7f;
+}
+
+#navbar #menu {
+list-style: none;
+}
+
+#navbar #menu ul{
+margin-top: 10px;
+}
+
+
+#navbar #menu ul li a {
+color: #000;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.componentes{
+  margin-top: 20px;
+}
+
+
+/* media screen */
+
+@media (max-width: 1023px) {
+  #navbar {
+    display: none;
+  }
+}
