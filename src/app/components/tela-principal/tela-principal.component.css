@@ -3,6 +3,8 @@
   top: 20px;
 }
 
+
+
 #navbar a {
   margin-right: 200px;
   color: white;
@@ -10,6 +12,9 @@
 
 #botao-pesquisa {
   background-color: #ffffff;
+}
+#botao-tela-login-crud{
+  background-color: white;
 }
 
 #botao-pesquisa:hover {
