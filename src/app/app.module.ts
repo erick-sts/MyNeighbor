@@ -12,6 +12,8 @@ import { FormEsqueciMinhaSenhaComponent } from './components/form-esqueci-minha-
 import { ReactiveFormsModule } from '@angular/forms';
 import { TelaMapaComponent } from './components/tela-mapa/tela-mapa.component';
 import { TelaPrincipalComponent } from './components/tela-principal/tela-principal.component';
+import { TelaContaComponent } from './components/tela-conta/tela-conta.component';
+
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { TelaPrincipalComponent } from './components/tela-principal/tela-princip
     FormEsqueciMinhaSenhaComponent,
     TelaMapaComponent,
     TelaPrincipalComponent,
+    TelaContaComponent,
   ],
   imports: [
     BrowserModule,

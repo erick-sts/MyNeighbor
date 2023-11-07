@@ -7,16 +7,19 @@ import { FormCadastro3Component } from './components/form-cadastro3/form-cadastr
 import { FormEsqueciMinhaSenhaComponent } from './components/form-esqueci-minha-senha/form-esqueci-minha-senha.component';
 import { TelaMapaComponent } from './components/tela-mapa/tela-mapa.component';
 import { TelaPrincipalComponent } from './components/tela-principal/tela-principal.component';
+import { TelaContaComponent } from './components/tela-conta/tela-conta.component';
 
 const routes: Routes = [
-  // {path: '', component: FormLoginComponent},
+  {path: '', component: TelaMapaComponent},
   {path: 'login', component: FormLoginComponent},
   {path: 'cadastro', component: FormCadastroComponent},
   { path: 'cadastro/parte2', component: FormCadastro2Component},
   { path: 'cadastro/parte3', component: FormCadastro3Component},
   {path: 'esqueci-minha-senha', component: FormEsqueciMinhaSenhaComponent},
-  {path: ``, component: TelaMapaComponent},
+  {path: 'mapa', component: TelaMapaComponent},
   {path: 'home', component: TelaPrincipalComponent},
+  {path: 'conta', component: TelaContaComponent},
+
 ];
 
 @NgModule({
