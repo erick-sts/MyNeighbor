@@ -14,6 +14,7 @@ import { TelaMapaComponent } from './components/tela-mapa/tela-mapa.component';
 import { TelaPrincipalComponent } from './components/tela-principal/tela-principal.component';
 import { TelaContaComponent } from './components/tela-conta/tela-conta.component';
 
+import { FormTelaCrudLogin } from './components/tela-login-crud/tela-login-crud.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { TelaContaComponent } from './components/tela-conta/tela-conta.component
     TelaMapaComponent,
     TelaPrincipalComponent,
     TelaContaComponent,
+    FormTelaCrudLogin,
   ],
   imports: [
     BrowserModule,
