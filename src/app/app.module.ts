@@ -1,5 +1,7 @@
+import { MatDialog } from '@angular/material/dialog';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +19,9 @@ import { TelaContaComponent } from './components/tela-conta/tela-conta.component
 import { FormTelaCrudLogin } from './components/tela-login-crud/tela-login-crud.component';
 import { AlterarSenhaComponent } from './components/alterar-senha/alterar-senha.component';
 import { AlterarNomeComponent } from './components/alterar-nome/alterar-nome.component';
+import { AlterarEnderecoComponent } from './components/alterar-endereco/alterar-endereco.component';
+import { AlterarTelefoneComponent } from './components/alterar-telefone/alterar-telefone.component';
+
 
 
 @NgModule({
@@ -33,11 +38,15 @@ import { AlterarNomeComponent } from './components/alterar-nome/alterar-nome.com
     FormTelaCrudLogin,
     AlterarSenhaComponent,
     AlterarNomeComponent,
+    AlterarEnderecoComponent,
+    AlterarTelefoneComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

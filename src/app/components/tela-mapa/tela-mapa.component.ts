@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 
@@ -7,27 +8,29 @@ import * as L from 'leaflet';
   styleUrls: ['./tela-mapa.component.css']
 })
 export class TelaMapaComponent implements OnInit {
-  ngOnInit() {
+  constructor() {}
 
+  ngOnInit() {
     const map = L.map('map').setView([-15.7801, -47.9292], 4);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-
-  if ('geolocation' in navigator) {
+    if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition((position) => {
         const userLat = position.coords.latitude;
         const userLng = position.coords.longitude;
 
         // Atualiza o mapa com as coordenadas do usuário
-        map.setView([userLat, userLng], 13); // Neste exemplo, o nível de zoom é definido como 13.
+        map.setView([userLat, userLng], 13);
       }, (error) => {
         console.error('Erro ao obter a localização do usuário:', error);
       });
     } else {
       console.log('Geolocalização não suportada no navegador.');
     }
+
+
   }
 }

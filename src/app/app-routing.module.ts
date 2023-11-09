@@ -11,20 +11,25 @@ import { TelaContaComponent } from './components/tela-conta/tela-conta.component
 import { FormTelaCrudLogin } from './components/tela-login-crud/tela-login-crud.component';
 import { AlterarSenhaComponent } from './components/alterar-senha/alterar-senha.component';
 import { AlterarNomeComponent } from './components/alterar-nome/alterar-nome.component';
+import { AlterarEnderecoComponent } from './components/alterar-endereco/alterar-endereco.component';
+import { AlterarTelefoneComponent } from './components/alterar-telefone/alterar-telefone.component';
 
 const routes: Routes = [
-  {path: '', component: TelaMapaComponent},
-  {path: 'login', component: FormLoginComponent},
-  {path: 'cadastro', component: FormCadastroComponent},
-  { path: 'cadastro/parte2', component: FormCadastro2Component},
-  { path: 'cadastro/parte3', component: FormCadastro3Component},
-  {path: 'esqueci-minha-senha', component: FormEsqueciMinhaSenhaComponent},
-  {path: 'mapa', component: TelaMapaComponent},
-  {path: 'home', component: TelaPrincipalComponent},
-  {path: 'conta', component: TelaContaComponent},
-  {path: 'adm', component: FormTelaCrudLogin},
-  {path: 'alterar-senha', component: AlterarSenhaComponent},
-  {path: 'alterar-nome', component: AlterarNomeComponent},
+  { path: '', component: TelaMapaComponent },
+  { path: 'login', component: FormLoginComponent },
+  { path: 'cadastro', component: FormCadastroComponent },
+  { path: 'cadastro/parte2', component: FormCadastro2Component },
+  { path: 'cadastro/parte3', component: FormCadastro3Component },
+  { path: 'esqueci-minha-senha', component: FormEsqueciMinhaSenhaComponent },
+  { path: 'mapa', component: TelaMapaComponent },
+  { path: 'home', component: TelaPrincipalComponent },
+  { path: 'conta', component: TelaContaComponent },
+  { path: 'adm', component: FormTelaCrudLogin },
+  { path: 'alterar-senha', component: AlterarSenhaComponent },
+  { path: 'alterar-nome', component: AlterarNomeComponent },
+  { path: 'alterar-endereco', component: AlterarEnderecoComponent },
+  { path: 'alterar-telefone', component: AlterarTelefoneComponent },
+
 
 ];
 
