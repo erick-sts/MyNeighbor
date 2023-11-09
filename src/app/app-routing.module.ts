@@ -9,6 +9,8 @@ import { TelaMapaComponent } from './components/tela-mapa/tela-mapa.component';
 import { TelaPrincipalComponent } from './components/tela-principal/tela-principal.component';
 import { TelaContaComponent } from './components/tela-conta/tela-conta.component';
 import { FormTelaCrudLogin } from './components/tela-login-crud/tela-login-crud.component';
+import { AlterarSenhaComponent } from './components/alterar-senha/alterar-senha.component';
+import { AlterarNomeComponent } from './components/alterar-nome/alterar-nome.component';
 
 const routes: Routes = [
   {path: '', component: TelaMapaComponent},
@@ -21,6 +23,8 @@ const routes: Routes = [
   {path: 'home', component: TelaPrincipalComponent},
   {path: 'conta', component: TelaContaComponent},
   {path: 'adm', component: FormTelaCrudLogin},
+  {path: 'alterar-senha', component: AlterarSenhaComponent},
+  {path: 'alterar-nome', component: AlterarNomeComponent},
 
 ];
 

@@ -15,6 +15,8 @@ import { TelaPrincipalComponent } from './components/tela-principal/tela-princip
 import { TelaContaComponent } from './components/tela-conta/tela-conta.component';
 
 import { FormTelaCrudLogin } from './components/tela-login-crud/tela-login-crud.component';
+import { AlterarSenhaComponent } from './components/alterar-senha/alterar-senha.component';
+import { AlterarNomeComponent } from './components/alterar-nome/alterar-nome.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { FormTelaCrudLogin } from './components/tela-login-crud/tela-login-crud.
     TelaPrincipalComponent,
     TelaContaComponent,
     FormTelaCrudLogin,
+    AlterarSenhaComponent,
+    AlterarNomeComponent,
   ],
   imports: [
     BrowserModule,
