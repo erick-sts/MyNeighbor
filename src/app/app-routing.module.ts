@@ -1,5 +1,6 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { FormCadastro2Component } from './components/form-cadastro2/form-cadastro2.component';
 import { FormCadastroComponent } from './components/form-cadastro/form-cadastro.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';

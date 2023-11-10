@@ -1,7 +1,6 @@
-import { MatDialog } from '@angular/material/dialog';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -46,7 +45,6 @@ import { AlterarTelefoneComponent } from './components/alterar-telefone/alterar-
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
