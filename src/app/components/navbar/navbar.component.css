@@ -33,6 +33,10 @@
     color: #000;
   }
 
+  #logobranco{
+    width: 100px;
+ }
+
 @media (max-width: 1023px) {
     #navbar {
         display: none;

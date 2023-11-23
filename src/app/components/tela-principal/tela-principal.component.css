@@ -1,14 +1,10 @@
-
+.container .componente-principal{
+  margin-top: 20px;
+}
 
 #botao-tela-login-crud {
   background-color: white;
-}
-
-
-/* 
-.componentes .componente-principal {
-  margin-top: 20px;
-} */
+} 
 
 .componentes .footer {
   display: flex;
