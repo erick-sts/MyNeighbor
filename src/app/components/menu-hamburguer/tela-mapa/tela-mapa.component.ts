@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 
@@ -23,7 +22,7 @@ export class TelaMapaComponent implements OnInit {
         const userLng = position.coords.longitude;
 
         // Atualiza o mapa com as coordenadas do usuário
-        map.setView([userLat, userLng], 13);
+        map.setView([userLat, userLng], 15);
       }, (error) => {
         console.error('Erro ao obter a localização do usuário:', error);
       });

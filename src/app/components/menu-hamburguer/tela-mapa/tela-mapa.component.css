@@ -1,18 +1,48 @@
-.container app-menu{
+.container app-menu {
   position: fixed;
   top: 2%;
 }
 
-#map
-{
-width: 140vh;
-height: 70vh;
+#map {
+  width: 150vh;
+  height: 65vh;
 }
 
+.checkbox-container {
+cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff2f;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.checkbox {
+  margin-top: 5px;
+}
+
+.checkbox input{
+  cursor: pointer;
+}
+
+.checkbox #checkboxAlerta:hover{
+  content: attr(title);
+}
+
+.checkbox #checkboxEvento:hover{
+  content: attr(title);
+}
+
+.checkbox #checkboxAnuncio:hover{
+  content: attr(title);
+}
 
 @media (max-width: 1023px) {
   #map {
-  width: 95vw;
+    width: 95vw;
     height: 90vh; /* 100% da altura da viewport (tela) */
   }
 }

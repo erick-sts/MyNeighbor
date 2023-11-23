@@ -1,8 +1,20 @@
 <div class="container">
-  <app-menu style="z-index: 1"></app-menu>
+  <app-menu  style="z-index: 1"></app-menu>
   <div class="row justify-content-center" style="z-index: 0">
     <div class="col-md-12">
-      <div id="map"></div>
+      <div id="map">
+        <div class="checkbox-container">
+          <div class="checkbox">
+            <input title="Exibir Alertas" type="checkbox" id="checkboxAlerta" checked />
+          </div>
+          <div class="checkbox">
+            <input title="Exibir Eventos" type="checkbox" id="checkboxEvento" checked/>
+          </div>
+          <div class="checkbox">
+            <input title="Exibir Anúncios" type="checkbox" id="checkboxAnuncio" checked/>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
