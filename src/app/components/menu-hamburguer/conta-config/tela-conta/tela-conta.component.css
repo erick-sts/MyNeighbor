@@ -15,3 +15,10 @@
 .card ul li a:hover{
     color: #5935A1;
 }
+
+/* menu */
+
+.container app-menu{
+    position: fixed;
+    top: 5%;
+  }

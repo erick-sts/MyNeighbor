@@ -1,0 +1,18 @@
+.container app-menu{
+  position: fixed;
+  top: 5%;
+}
+
+#map
+{
+width: 140vh;
+height: 70vh;
+}
+
+
+@media (max-width: 1023px) {
+  #map {
+  width: 95vw;
+    height: 90vh; /* 100% da altura da viewport (tela) */
+  }
+}
