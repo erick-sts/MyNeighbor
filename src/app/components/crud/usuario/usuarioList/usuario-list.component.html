@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-header bg-primary text-light">
+
+    </div>
+
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">CPF</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--os dados serao exibidos através deste bloco de código: -->
+                <tr *ngFor="let usuario of usuarios">
+                    <td>{{usuario.cpf}}</td>
+                    <td>{{usuario.nome}}</td>
+                    <td>{{usuario.email}}</td>
+                    <td>
+                        <a class="btn btn-primary" title="editar" href="#" routerLink="/usuario/editar/{{usuario.id}}">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a (click)="delete(usuario)" href="#" class="btn btn-danger" title="excluir">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <a routerLink="/usuarios/novo" class="btn btn-primary">Novo Usuário</a>
+    </div>
+</div>
