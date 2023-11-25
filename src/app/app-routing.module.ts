@@ -17,8 +17,8 @@ import { AlterarTelefoneComponent } from './components/menu-hamburguer/conta-con
 import { NavbarComponent } from './components/navbar/navbar';
 
 const routes: Routes = [
-  { path: '', component: TelaMapaComponent },
-  { path: 'login', component: FormLoginComponent },
+  // { path: '', component: TelaMapaComponent },
+  { path: '', component: FormLoginComponent },
   { path: 'cadastro', component: FormCadastroComponent },
   { path: 'cadastro/parte2', component: FormCadastro2Component },
   { path: 'cadastro/parte3', component: FormCadastro3Component },

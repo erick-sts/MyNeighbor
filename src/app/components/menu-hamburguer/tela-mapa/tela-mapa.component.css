@@ -13,9 +13,9 @@ cursor: pointer;
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #ffffff2f;
+  background-color: #ffffff85;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #00000095;
   border-radius: 5px;
   z-index: 1000;
 }

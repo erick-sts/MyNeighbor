@@ -4,52 +4,28 @@
       <div class="card">
         <div class="card-body">
           <div class="text-center">
-            <img
-              src="../../../assets/MyNeighborLogo.png"
-              style="width: 70px"
-              alt=""
-            />
+            <img src="../../../assets/MyNeighborLogo.png" style="width: 70px" alt="" />
           </div>
           <h5 class="card-title text-center">Seja um de nós!</h5>
-          <form>
+          <form [formGroup]="formulario" (ngSubmit)="avancarParaProximaPagina()">
             <div class="form-group p-2">
               <label for="nome">Nome Completo:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nome"
-                placeholder="Nome"
-              />
+              <input type="text" class="form-control" id="nome" placeholder="Nome" formControlName="nome" />
             </div>
             <div class="form-group p-2">
               <label for="email">E-mail:</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="E-mail"
-              />
+              <input type="email" class="form-control" id="email" placeholder="E-mail" formControlName="email" />
             </div>
             <div class="form-group p-2">
               <label for="senha">Senha:</label>
-              <input
-                type="password"
-                class="form-control"
-                id="senha"
-                placeholder="Senha"
-              />
+              <input type="password" class="form-control" id="senha" placeholder="Senha" formControlName="senha" />
             </div>
             <div class="form-group p-2">
               <label for="dataNascimento">Data de Nascimento:</label>
-              <input
-                type="date"
-                class="form-control"
-                id="dataNascimento"
-                placeholder="Data de Nascimento"
-              />
+              <input type="date" class="form-control" id="dataNascimento" placeholder="Data de Nascimento" formControlName="dataNascimento" />
             </div>
             <div class="text-center pt-2" id="botao">
-              <button [routerLink]="['/cadastro/parte2']" type="submit" class="btn btn-primary btn-block">
+              <button type="submit" class="btn btn-primary btn-block" [disabled]="!formulario.valid">
                 Avançar
               </button>
             </div>
@@ -59,4 +35,3 @@
     </div>
   </div>
 </div>
-
