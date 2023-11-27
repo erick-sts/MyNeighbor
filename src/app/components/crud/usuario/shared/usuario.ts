@@ -1,4 +1,5 @@
 export class Usuario {
+[x: string]: any;
     'id': number;
     'cpf': string; 
     'nome': string; 

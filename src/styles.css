@@ -1,13 +1,14 @@
-body {
+ .body-index{
   background: linear-gradient(to bottom, #5935A1, #300057);
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
+
 }
 
-.container {
+.container-index {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 
 }

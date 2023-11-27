@@ -1,34 +1,36 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-body">
-          <div class="text-center">
-            <img src="../../../assets/MyNeighborLogo.png" style="width: 70px" alt="" />
+
+<div class="container-index">
+
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="../../../assets/MyNeighborLogo.png" style="width: 70px" alt="" />
+            </div>
+            <h5 class="card-title text-center">Estamos quase lá!</h5>
+            <form [formGroup]="formulario" (ngSubmit)="avancarParaProximaPagina()">
+              <div class="form-group p-2">
+                <label for="apelido">Como você quer ser chamado:</label>
+                <input type="text" class="form-control" id="apelido" placeholder="Apelido" formControlName="apelido" />
+              </div>
+              <div class="form-group p-2">
+                <label for="cpfCnpj">CPF/CNPJ:</label>
+                <input type="text" class="form-control" id="cpfCnpj" placeholder="CPF/CNPJ" formControlName="cpfCnpj" />
+              </div>
+              <div class="form-group p-2">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Telefone"
+                  formControlName="telefone" />
+              </div>
+              <div class="text-center pt-2" id="botao">
+                <button type="submit" class="btn btn-primary btn-block" [disabled]="!formulario.valid">
+                  Avançar
+                </button>
+              </div>
+            </form>
           </div>
-          <h5 class="card-title text-center">Estamos quase lá!</h5>
-          <form [formGroup]="formulario" (ngSubmit)="avancarParaProximaPagina()">
-            <div class="form-group p-2">
-              <label for="apelido">Como você quer ser chamado:</label>
-              <input type="text" class="form-control" id="apelido" placeholder="Apelido" formControlName="apelido" />
-            </div>
-            <div class="form-group p-2">
-              <label for="cpfCnpj">CPF/CNPJ:</label>
-              <input type="text" class="form-control" id="cpfCnpj" placeholder="CPF/CNPJ" formControlName="cpfCnpj" />
-            </div>
-            <div class="form-group p-2">
-              <label for="telefone">Telefone:</label>
-              <input type="text" class="form-control" id="telefone" placeholder="Telefone" formControlName="telefone" />
-            </div>
-            <div class="text-center pt-2" id="botao">
-              <button type="submit" class="btn btn-primary btn-block" [disabled]="!formulario.valid">
-                Avançar
-              </button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
-  </div>
 </div>
-  

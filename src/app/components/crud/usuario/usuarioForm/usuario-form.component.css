@@ -1,0 +1,25 @@
+
+
+#form-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.box{
+    margin: 5%;
+}
+
+#botoes{
+    margin-top: 5%;
+}
+

@@ -10,3 +10,4 @@ import { Component, NgModule } from '@angular/core';
 
 export class FormTelaCrudLogin {
 }
+// document.getElementById()

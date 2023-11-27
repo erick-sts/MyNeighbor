@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Usuario } from '../shared/usuario';
 import { ActivatedRoute, Route, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { UsuarioService } from '../shared/usuario.service';
+import { FormsModule } from '@angular/forms';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -11,8 +14,11 @@ import { UsuarioService } from '../shared/usuario.service';
   templateUrl: './usuario-form.component.html',
   styleUrls: ['./usuario-form.component.css']
 })
+
+
+
 export class UsuarioFormComponent {
-  'usuario': Usuario; //criando variável do tipo Cliente.
+  'usuario': Usuario; //criando variável do tipo Usuário.
   title = " "; //dando um valor vazio String a variável title.
 
 
@@ -42,3 +48,4 @@ export class UsuarioFormComponent {
       this.router.navigate(['/usuarios'])
      })
 }}
+
