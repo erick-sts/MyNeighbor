@@ -1,107 +1,124 @@
-<div class="card">
+<div class="card" id="formUser">
 
     <div class="card-header bg-primary text-light">
         {{title}}
     </div>
 
-    <form class="form-group m-2" (ngSubmit)="ngOnSubmit()">
+    <form class="form-group m-2" id="form-container" (ngSubmit)="ngOnSubmit()">
+
+        <div class="box">
+            <h6>Dados Cliente</h6>
+            <div class="form-control">
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" required minlength="3" id="cpf" name="cpf"
+                        [(ngModel)]="usuario.cpf">
+                </div>
 
 
-        <div class="form-group">
-            <label for="cpf">CPF</label>
-            <input type="text" class="form-control" required minlength="3" id="cpf" name="cpf"  [(ngModel)]="usuario.cpf">
-        </div>
+                <div class="form-group">
+                    <label for="nomeCompleto">Nome </label>
+                    <input type="text" class="form-control" required minlength="3" id="nome" name="nome"
+                        [(ngModel)]="usuario.nome">
+                </div>
 
-        <div class="form-group">
-            <label for="nomeCompleto">Nome </label>
-            <input type="text" class="form-control" required minlength="3" id="nome" name="nome"  [(ngModel)]="usuario.nomeCompleto">
-        </div>
+                <div class="form-group">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input type="date" class="form-control" required minlength="3" id="dataNascimento"
+                        name="dataNascimento" [(ngModel)]="usuario.dataNascimento">
+                </div>
 
-        <div class="form-group">
-            <label for="dataNascimento">Data de nascimento</label>
-            <input type="date" class="form-control" required minlength="3" id="dataNascimento" name="dataNascimento"  [(ngModel)]="usuario.dataNascimento">
-        </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" required minlength="3" id="email" name="email"
+                        [(ngModel)]="usuario.email">
+                </div>
 
-        <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" class="form-control" required minlength="3" id="email" name="email"  [(ngModel)]="usuario.email">
-        </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" required minlength="3" id="senha" name="senha"
+                        [(ngModel)]="usuario.senha">
+                </div>
 
-        <div class="form-group">
-            <label for="senha">Senha</label>
-            <input type="password" class="form-control" required minlength="3" id="senha" name="senha"  [(ngModel)]="usuario.senha">
-        </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" rows="3" class="form-control" required minlength="3" id="cidade" name="cidade"
+                        [(ngModel)]="usuario.cidade">
+                </div>
 
-        <div class="form-group">
-            <label for="cidade">Cidade</label>
-            <input type="text" rows="3" class="form-control" required minlength="3" id="cidade" name="cidade" [(ngModel)]="usuario.cidade">
-        </div>
-
-        <div class="form-group">
-            <label for="bairro">Bairro</label>
-            <input type="text" rows="3" class="form-control" required minlength="3" id="bairro" name="bairro" [(ngModel)]="usuario.bairro">
-        </div>
-
-
-
-        <h1>Visibilidade</h1> <!--VISIBILIDADE-->
-
-        <div class="form-group">
-            <label for="idCustomView">idCustomView</label>
-            <input type="date" class="form-control" required minlength="3" id="idCustomView" name="idCustomView"  [(ngModel)]="usuario.idCustomView">
-        </div>
-
-        <div class="form-group">
-            <label for="viewAlerta">viewAlerta</label>
-            <input type="date" class="form-control" required minlength="3" id="viewAlerta" name="viewAlerta"  [(ngModel)]="usuario.viewAlerta">
-        </div>
-
-        <div class="form-group">
-            <label for="viewEvento">viewEvento</label>
-            <input type="date" class="form-control" required minlength="3" id="viewEvento" name="viewEvento"  [(ngModel)]="usuario.viewEvento">
-        </div>
-
-        <div class="form-group">
-            <label for="viewAnuncio">viewAnuncio</label>
-            <input type="date" class="form-control" required minlength="3" id="viewAnuncio" name="viewAnuncio"  [(ngModel)]="usuario.viewAnuncio">
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" rows="3" class="form-control" required minlength="3" id="bairro" name="bairro"
+                        [(ngModel)]="usuario.bairro">
+                </div>
+            </div>
         </div>
 
 
+        <div class="box">
+            <h6>Visibilidade</h6> <!--VISIBILIDADE-->
 
-        
-        <h1>ENUM TIPO USUÁRIO</h1>
-        <div class="form-group">
-            <label for="USUARIO_PADRAO">USUARIO_PADRAO</label>
-            <input type="checkbox" class="form-control" required minlength="3" id="USUARIO_PADRAO" name="USUARIO_PADRAO"  [(ngModel)]="usuario.USUARIO_PADRAO">
+            <div class="form-control">
+
+                <div class="form-group">
+                    <label for="idCustomView">idCustomView</label>
+                    <input type="text" class="form-control" required minlength="3" id="idCustomView" name="idCustomView"
+                        [(ngModel)]="usuario.idCustomView">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="viewAlerta">viewAlerta</label>
+                    <input type="text" class="form-control" required minlength="3" id="viewAlerta" name="viewAlerta"
+                        [(ngModel)]="usuario.viewAlerta">
+                </div>
+
+                <div class="form-group">
+                    <label for="viewEvento">viewEvento</label>
+                    <input type="text" class="form-control" required minlength="3" id="viewEvento" name="viewEvento"
+                        [(ngModel)]="usuario.viewEvento">
+                </div>
+
+                <div class="form-group">
+                    <label for="viewAnuncio">viewAnuncio</label>
+                    <input type="text" class="form-control" required minlength="3" id="viewAnuncio" name="viewAnuncio"
+                        [(ngModel)]="usuario.viewAnuncio">
+                </div>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="USUARIO_ADMINISTRADOR">USUARIO_ADMINISTRADOR</label>
-            <input type="checkbox" class="form-control" required minlength="3" id="USUARIO_ADMINISTRADOR" name="USUARIO_ADMINISTRADOR"  [(ngModel)]="usuario.USUARIO_ADMINISTRADOR">
+
+        <div class="box">
+
+            <h6>ENUM TIPO USUÁRIO</h6>
+
+            <div class="form-control">
+                <div class="form-group">
+                    <label for="USUARIO_PADRAO">USUARIO_PADRAO</label>
+                    <input type="checkbox" id="USUARIO_PADRAO" name="USUARIO_PADRAO"
+                        [(ngModel)]="usuario.USUARIO_PADRAO">
+
+                    <br>
+                    <label for="USUARIO_ADMINISTRADOR">USUARIO_ADMINISTRADOR</label>
+                    <input type="checkbox" id="USUARIO_ADMINISTRADOR" name="USUARIO_ADMINISTRADOR"
+                        [(ngModel)]="usuario.USUARIO_ADMINISTRADOR">
+                </div>
+
+
+                <div class="form-group">
+
+                </div>
+            </div>
+
+            <div id="botoes">
+                
+                <button type="submit" class="btn btn-primary">Salvar</button>
+
+                <a class="btn btn-seconday m1-2" href="">Cancelar</a>
+
+            </div>
+
         </div>
-        
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        <!-- <div class="form-group">
-            <label for="limiteCredito"></label>
-            <input type="text" class="form-control" required minlength="3" id="limiteCredito" name="limiteCredito" [(ngModel)]="cliente.limiteCredito">
-        </div> -->
-        
-        <button type="submit" class="btn btn-primary">Salvar</button>
-
-        <a class="btn btn-seconday m1-2" href="" >Cancelar</a>
-        
     </form>
 
 
