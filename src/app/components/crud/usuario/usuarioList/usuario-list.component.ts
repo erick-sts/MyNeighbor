@@ -1,6 +1,7 @@
     import { Component, OnInit } from '@angular/core';
     import {Usuario} from '../shared/usuario';
     import { UsuarioService } from '../shared/usuario.service';
+    import { Router } from '@angular/router';
 
     @Component({
     selector: 'app-usuario-list',
@@ -11,7 +12,7 @@
     title = 'Relação de Usuários';
     'usuarios': Usuario[]
 
-    constructor(private usuarioService: UsuarioService){ }
+    constructor(private usuarioService: UsuarioService, private router:Router){ }
     ngOnInit() { 
         this.getAll();
     }
@@ -28,6 +29,10 @@
         this.usuarios = this.usuarios.filter( c => c !== usuario);
         });
     }
+    }
+
+    cadastrar(): void{
+        this.router.navigate(['formUsuarioCrud'])
     }
 
     }

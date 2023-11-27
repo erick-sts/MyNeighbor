@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
  
 @Component({
@@ -9,5 +10,13 @@ import { Component, NgModule } from '@angular/core';
 })
 
 export class FormTelaCrudLogin {
+  constructor(private router: Router){
+
+  }
+
+avancarList():void{
+  this.router.navigate(['listUsuarioCrud']);
 }
-// document.getElementById()
+
+}
+
