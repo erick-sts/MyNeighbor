@@ -64,8 +64,9 @@ const routes: Routes = [
   { path: 'loginAdm', component: FormTelaCrudLogin },
   
   //usuarioCrud  
-    { path: 'formUsuarioCrud', component: UsuarioFormComponent },
-    { path: 'listUsuarioCrud', component: UsuarioListComponent }
+    { path: 'usuarios', component: UsuarioListComponent },
+    { path: 'usuarios/novo', component: UsuarioFormComponent },
+    {path: 'usuarios/editar/:id', component: UsuarioFormComponent},
   //##
 ];
 
