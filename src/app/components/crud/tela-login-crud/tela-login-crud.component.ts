@@ -15,7 +15,7 @@ export class FormTelaCrudLogin {
   }
 
 avancarList():void{
-  this.router.navigate(['listUsuarioCrud']);
+  this.router.navigate(['usuarios']);
 }
 
 }

@@ -49,7 +49,16 @@ export class UsuarioFormComponent {
      })
 }
   retornaList(): void{
-    this.router.navigate(['listUsuarioCrud']);
+    this.router.navigate(['usuarios']);
   }
+
+  retornaSubmitList():void{
+    document.getElementById('btnSubmit')?.addEventListener('submit', function (event){
+      window.location.href = 'usuarios';
+
+      event.preventDefault();
+    })
+  }
+
 }
 

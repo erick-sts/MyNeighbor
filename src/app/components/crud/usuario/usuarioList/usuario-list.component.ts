@@ -32,7 +32,7 @@
     }
 
     cadastrar(): void{
-        this.router.navigate(['formUsuarioCrud'])
+        this.router.navigate(['usuarios/novo'])
     }
 
     }
