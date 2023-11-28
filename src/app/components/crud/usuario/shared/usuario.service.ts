@@ -7,7 +7,7 @@ import { Usuario } from './usuario';
 })
 export class UsuarioService {
 
-  private URL = 'http://localhost:9090/usuario';
+  private URL = 'http://localhost:9090/fatec';
 
 
   constructor(private http: HttpClient) { }

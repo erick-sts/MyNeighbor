@@ -47,5 +47,9 @@ export class UsuarioFormComponent {
      observable.subscribe(() => {
       this.router.navigate(['/usuarios'])
      })
-}}
+}
+  retornaList(): void{
+    this.router.navigate(['listUsuarioCrud']);
+  }
+}
 
