@@ -6,19 +6,21 @@
 
     <form class="form-group m-2" id="form-container" (ngSubmit)="ngOnSubmit()">
 
-        <div class="box">
-            <h6>Dados Cliente</h6>
-            <div class="form-control">
+        <div class="box row">
+
+            <!-- First Column -->
+            <div class="col-md-6">
+                <h6>Dados Cliente</h6>
+
                 <div class="form-group">
                     <label for="cpf">CPF</label>
                     <input type="text" required class="form-control" required minlength="3" id="cpf" name="cpf"
                         [(ngModel)]="usuario.cpf">
                 </div>
 
-
                 <div class="form-group">
                     <label for="nomeCompleto">Nome </label>
-                    <input type="text"required class="form-control" required minlength="3" id="nome" name="nome"
+                    <input type="text" required class="form-control" required minlength="3" id="nome" name="nome"
                         [(ngModel)]="usuario.nome">
                 </div>
 
@@ -28,6 +30,10 @@
                         name="dataNascimento" [(ngModel)]="usuario.dataNascimento">
                 </div>
 
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-6">
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" required class="form-control" required minlength="3" id="email" name="email"
@@ -52,22 +58,16 @@
                         [(ngModel)]="usuario.bairro">
                 </div>
             </div>
-            <div id="botoes">
-                
-                <button type="submit" class="btn btn-primary" id="btnSubmit">Salvar</button>
-    
-                <a class="btn btn-seconday m1-2" (click)="retornaList()">Cancelar</a>
-    
-            </div>
+
         </div>
 
-
-
-
-
-
+        <div id="botoes" >
+            
+            <button type="submit" class="btn btn-primary" id="btnSubmit">Salvar</button>
+            <a class="btn btn-secondary m-1" (click)="retornaList()">Cancelar</a>
+        </div>  
 
     </form>
-
-
+ 
+        
 </div>
